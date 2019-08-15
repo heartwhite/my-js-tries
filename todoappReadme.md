@@ -54,29 +54,35 @@ Request body is in the same shape in all cases.
 ### Requirements in cases of request (Request body instructions)
 
 `"user"` and `"list":{"name"}` areas are mandatory in all cases
+
 1- POST /list
 `"reminder": "2012-10-05 12:05:00"` is optional
+
 `"todo": []` content of todo array is ignored
 
 2- POST /todo
 `"reminder": "2012-10-05 12:05:00"` is ignored
-and `"todo": [{ "description": "todoItemDescription" }]` is mandatory. All todo items in array will be added
+
+`"todo": [{ "description": "todoItemDescription" }]` is mandatory. All todo items in array will be added
 
 3- PUT /list
-`"reminder": "2012-10-05 12:05:00"` is mandatory in mysql datetime format.
-`"todo": []` content of todo array is ignored.
+`"reminder": "2012-10-05 12:05:00"` is mandatory in mysql datetime format
+
+`"todo": []` content of todo array is ignored
 
 4- PUT /todo
 `"reminder": "2012-10-05 12:05:00"` is ignored
-and `"todo": [{ "description": "todoItemDescription" }]` is mandatory. All todo items in array will be marked as done.
+
+`"todo": [{ "description": "todoItemDescription" }]` is mandatory. All todo items in array will be marked as done
 
 5- DELETE /list
 `"reminder": "2012-10-05 12:05:00"` is ignored
+
 `"todo": []` content of todo array is ignored.
 
 6- DELETE /todo
 `"reminder": "2012-10-05 12:05:00"` is ignored
-and `"todo": [{ "description": "todoItemDescription" }]` is mandatory. All todo items in array will be deleted.
+`"todo": [{ "description": "todoItemDescription" }]` is mandatory. All todo items in array will be deleted.
 
 ### Normalization
 
