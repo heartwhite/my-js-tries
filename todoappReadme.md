@@ -87,26 +87,25 @@ Request body is in the same shape in all cases.
 ### USERNAMES
 
 defined usernames are:
-+----+----------+
-| id | username |
-+----+----------+
-| 2 | abdullah |
-| 6 | alusine |
-| 16 | andrej |
-| 7 | ghufran |
-| 10 | hamza |
-| 11 | hani |
-| 14 | igor |
-| 5 | irfan |
-| 8 | nadin |
-| 3 | suheyb |
-| 4 | talip |
-| 12 | unmesh |
-| 13 | utku |
-| 1 | veli |
-| 15 | yagoup |
-| 9 | zehra |
-+----+----------+
+| username |
+| ------ |
+| zehra |
+| yagoup |
+| veli |
+| ists |
+| utku |
+| unmesh |
+| talip |
+| suheyb |
+| nadin |
+| irfan |
+| igor |
+| hamza |
+| hani |
+| ghufran |
+| andrej |
+| alusine |
+| abdullah |
 
 #### 1NF (4 rules)
 
