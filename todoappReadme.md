@@ -4,9 +4,9 @@ ToDoApp is an user based app. Each user can do something in his own environment.
 In our case of homework, there is no admin.
 Users can; - Create todo list - Add todo item(s) to list - Delete todo list - Delete todo item(s) - Mark item(s) as done - Add reminder to list
 
-### here is methods
+## here is methods
 
-##What you can GET:
+## What you can GET:
 
 | path                | What to get                      |
 | ------------------- | -------------------------------- |
@@ -15,21 +15,21 @@ Users can; - Create todo list - Add todo item(s) to list - Delete todo list - De
 | /username/done      | All items marked done            |
 | /username/reminders | Reminders with list names        |
 
-##What you can PUT (please check request body instructions):
+## What you can PUT (please check request body instructions):
 
 | path  | What to update                    |
 | ----- | --------------------------------- |
 | /list | Adds reminder(from body)          |
 | /todo | Marks item(s) as done (from body) |
 
-##What you can POST (please check request body instructions):
+## What you can POST (please check request body instructions):
 
 | path  | What to create                    |
 | ----- | --------------------------------- |
 | /list | Create a list with provided name  |
 | /todo | Add todo item(s) to specific list |
 
-##What you can DELETE (please check request body instructions):
+## What you can DELETE (please check request body instructions):
 
 | path   | What to delete                  |
 | ------ | ------------------------------- |
@@ -84,12 +84,29 @@ Request body is in the same shape in all cases.
 `"reminder": "2012-10-05 12:05:00"` is ignored
 `"todo": [{ "description": "todoItemDescription" }]` is mandatory. All todo items in array will be deleted.
 
-### Normalization
+### USERNAMES
 
-Database Design following normal forms as a convention.
-These normal forms build incrementally.
-E.g. The database is in 3NF if it is already in 2NF and satisfied the
-rules for 3rd normal form. Read [here](https://www.studytonight.com/dbms/database-normalization.php) for more details.
+defined usernames are:
++----+----------+
+| id | username |
++----+----------+
+| 2 | abdullah |
+| 6 | alusine |
+| 16 | andrej |
+| 7 | ghufran |
+| 10 | hamza |
+| 11 | hani |
+| 14 | igor |
+| 5 | irfan |
+| 8 | nadin |
+| 3 | suheyb |
+| 4 | talip |
+| 12 | unmesh |
+| 13 | utku |
+| 1 | veli |
+| 15 | yagoup |
+| 9 | zehra |
++----+----------+
 
 #### 1NF (4 rules)
 
