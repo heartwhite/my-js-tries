@@ -4,7 +4,7 @@ ToDoApp is an user based app. Each user can do something in his own environment.
 In our case of homework, there is no admin.
 Users can; - Create todo list - Add todo item(s) to list - Delete todo list - Delete todo item(s) - Mark item(s) as done - Add reminder to list
 
-## Here is methods
+### here is methods
 
 ##What you can GET:
 
